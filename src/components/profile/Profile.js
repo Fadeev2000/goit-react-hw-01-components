@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import defaultImg from '../../user.png'
 
 function Profile({
     name,
@@ -42,7 +43,7 @@ Profile.propTypes = {
   name: PropTypes.string.isRequired,
   tag: PropTypes.string,
   location: PropTypes.string,
-  avatar: PropTypes.string,
+  avatar: PropTypes.string.isRequired,
   stats: PropTypes.shape({
       followers: PropTypes.number.isRequired,
       views: PropTypes.number.isRequired,
@@ -51,7 +52,7 @@ Profile.propTypes = {
 };
 
 Profile.defaultProps = {
-  avatar: "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg",
+  avatar: defaultImg,
 };
 
 export default Profile;
