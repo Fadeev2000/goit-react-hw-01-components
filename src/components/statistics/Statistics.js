@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import StatisticsItem from './StatisticsItem';
+import StatisticsItem from '../StatisticsItem/StatisticsItem';
 
 function Statistics({
     title,

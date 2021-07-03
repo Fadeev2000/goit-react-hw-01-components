@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import defaultImg from '../../user.png';
 
 function FriendListItem({
-    avatar,
+    avatar = defaultImg,
     name,
     isOnline
 }) {
@@ -16,7 +17,7 @@ function FriendListItem({
 }
 
 FriendListItem.propTypes = {
-    avatar: PropTypes.string.isRequired,
+    avatar: PropTypes.string,
     name: PropTypes.string.isRequired,
     isOnline: PropTypes.bool.isRequired
 }
