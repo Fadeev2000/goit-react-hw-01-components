@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import css from './Profile.module.css'
-import defaultImg from '../../user.png'
+import css from './Profile.module.css';
+import defaultImg from '../../user.png';
 
 function Profile({
     name,

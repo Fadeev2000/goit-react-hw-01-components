@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import css from './FriendListItem.module.css'
 import defaultImg from '../../user.png';
 
 function FriendListItem({
@@ -9,9 +10,9 @@ function FriendListItem({
     
     return (
         <>
-            <span class="status">{isOnline}</span>
-            <img class="avatar" src={avatar} alt={name} width="48" />
-            <p class="name">{name}</p>
+            <span className={css.status} style={{backgroundColor: isOnline ? 'green' : 'red'}}></span>
+            <img className={css.avatar} src={avatar} alt={name} width="48" />
+            <p className={css.name}>{name}</p>
         </>
     );
 }

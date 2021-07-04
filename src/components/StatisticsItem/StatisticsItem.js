@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from './StatisticsItem.module.css'
+import css from './StatisticsItem.module.css';
 
 function StatisticsItem({
     label,
