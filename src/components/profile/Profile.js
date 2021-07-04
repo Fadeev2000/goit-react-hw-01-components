@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import css from './Profile.module.css'
 import defaultImg from '../../user.png'
 
-console.dir('css', css);
 function Profile({
     name,
     avatar,

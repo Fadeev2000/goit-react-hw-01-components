@@ -1,17 +1,18 @@
 import PropTypes from 'prop-types';
 import StatisticsItem from '../StatisticsItem/StatisticsItem';
+import css from './Statistics.module.css'
 
 function Statistics({
     title,
     stats,
 }) {
     return (
-        <section class="statistics">
-            {title && <h2 class="title">{title}</h2>}
+        <section className={css.statistics}>
+            {title && <h2 className={css.title}>{title}</h2>}
 
-            <ul class="stat-list">
+            <ul class={css.statList}>
                 {stats.map(({id, label, percentage}) => (
-                    <li key={id} class="item" style={{ backgroundColor: rndColor() }}>
+                    <li key={id} className={css.item} style={{ backgroundColor: rndColor() }}>
                         <StatisticsItem label={label} percentage={percentage}/>
                     </li>
                 ))}
@@ -24,7 +25,8 @@ function rndColor() {
     let bgColor = '#';
 
     for (let i = 1; i <= 3; i += 1) {
-        const rgb = Math.round(70 + Math.random() * (256 - 70)).toString(16);
+        const rnd = Math.random() * 256;
+        const rgb = rnd > 200 ? Math.round(rnd - 56).toString(16) : Math.round(rnd).toString(16);
 
         bgColor += isTwoSimbols(rgb);
     }

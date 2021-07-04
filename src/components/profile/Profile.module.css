@@ -1,6 +1,7 @@
 .profile {
-  width: 400px;
-  margin: 0 auto;
+  box-sizing: border-box;
+  width: 500px;
+  margin: 10px auto;
   padding: 100px 70px;
   background-color: #ccc;
 }
