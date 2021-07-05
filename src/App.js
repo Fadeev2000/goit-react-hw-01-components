@@ -11,8 +11,6 @@ import Statistics from './components/Statistics/Statistics';
 import FriendList from './components/FriendList/FriendList';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
-console.log('user', user);
-
 function App() {
   return (
     <>

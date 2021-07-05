@@ -10,7 +10,7 @@ function Statistics({
         <section className={css.statistics}>
             {title && <h2 className={css.title}>{title}</h2>}
 
-            <ul class={css.statList}>
+            <ul className={css.statList}>
                 {stats.map(({id, label, percentage}) => (
                     <li key={id} className={css.item} style={{ backgroundColor: rndColor() }}>
                         <StatisticsItem label={label} percentage={percentage}/>

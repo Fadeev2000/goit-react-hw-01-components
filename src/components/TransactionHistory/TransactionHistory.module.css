@@ -1,0 +1,29 @@
+.transactionHistory {
+  box-sizing: border-box;
+  margin: 10px auto;
+  border-collapse: collapse;
+  border: 1px solid rgb(202, 200, 200);
+  text-align: center;
+}
+
+.transactionHistory th {
+  padding: 10px 0;
+  width: 300px;
+  color: #fff;
+  text-transform: uppercase;
+
+  border: 1px solid rgb(202, 200, 200);
+  background-color: rgb(46, 243, 227);
+}
+
+.transactionHistory td {
+  border: 1px solid rgb(202, 200, 200);
+}
+
+.transactionHistory td::first-letter {
+  text-transform: uppercase;
+}
+
+.transactionHistory tbody tr:nth-child(even) {
+  background-color: rgb(217, 226, 235);
+}
